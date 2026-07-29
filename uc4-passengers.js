@@ -1,11 +1,3 @@
-/* =========================================================================
-   uc4-passengers.js — Use Case 4: Enter Passenger Details
-   (Multi-Passenger Booking)
-   Passenger adds/removes co-passengers and fills name, age, gender and
-   berth preference for each. Business rule: up to MAX_PASSENGERS per
-   booking. Validates before moving on to Make Payment (Use Case 5).
-========================================================================= */
-
 import { state, blankPassenger } from "./state.js";
 import { CLASS_LABELS, MAX_PASSENGERS, BERTH_OPTIONS } from "./data.js";
 import { escapeHtml, bannerHtml } from "./utils.js";
