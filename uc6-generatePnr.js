@@ -1,10 +1,3 @@
-/* =========================================================================
-   uc6-generatePnr.js — Use Case 6: Generate PNR
-   Includes Use Case 5 (Make Payment): runs immediately after payment
-   succeeds. Generates a unique PNR, saves the booking, and shows the
-   confirmation screen.
-========================================================================= */
-
 import { state, resetBookingFlow } from "./state.js";
 import { generatePNR, showToast } from "./utils.js";
 import { saveBooking, getBooking } from "./storage.js";
