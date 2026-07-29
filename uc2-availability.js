@@ -45,7 +45,7 @@ export function classBox(train, cls){
   const info = train.classes[cls];
   const available = info.total - info.booked;
   const isAvailable = available > 0;
-  const wlNumber = 3 + (train.number.charCodeAt(0) % 15); // deterministic mock waitlist number
+  const wlNumber = 3 + (train.number.charCodeAt(0) % 15);
   return `
   <div class="class-box">
     <div class="cname">${cls} · ${CLASS_LABELS[cls]}</div>
