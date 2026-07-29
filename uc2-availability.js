@@ -1,11 +1,3 @@
-/* =========================================================================
-   uc2-availability.js — Use Case 2: Check Seat Availability
-   Includes Use Case 1 (Search Trains): renders the results returned by
-   the search, showing Available / Waitlisted status per travel class.
-   The actual class *selection* action is Use Case 3, handled in
-   uc3-selectClass.js — this module only displays availability.
-========================================================================= */
-
 import { state } from "./state.js";
 import { CLASS_LABELS } from "./data.js";
 import { escapeHtml, formatINR } from "./utils.js";
