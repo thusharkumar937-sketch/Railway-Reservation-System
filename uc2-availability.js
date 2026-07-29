@@ -40,9 +40,7 @@ export function tplResults(){
   </div>`;
 }
 
-// Renders the availability status + fare for one class, with the button
-// that Use Case 3 (uc3-selectClass.js) wires up via the .select-class-btn
-// class and data-train / data-class attributes.
+
 export function classBox(train, cls){
   const info = train.classes[cls];
   const available = info.total - info.booked;
