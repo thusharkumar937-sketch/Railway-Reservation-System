@@ -5,7 +5,7 @@ import { ticketCard } from "./ticketView.js";
 import { render } from "./renderer.js";
 
 export async function confirmBooking(){
-  // Business rule: each PNR must be unique across all bookings.
+
   let pnr = generatePNR();
   let existing = await getBooking(pnr);
   while(existing){ pnr = generatePNR(); existing = await getBooking(pnr); }
