@@ -9,9 +9,6 @@ import { getBooking, saveBooking } from "./storage.js";
 import { showToast } from "./utils.js";
 import { askConfirm } from "./modal.js";
 
-// `container` is the DOM node holding one or more .cancel-booking-btn
-// buttons. `onDone(pnr)` is called after a successful cancellation so the
-// caller can refresh its own view (re-run the PNR lookup, or reload history).
 export function bindCancelButtons(container, onDone){
   container.querySelectorAll(".cancel-booking-btn").forEach(btn => {
     btn.addEventListener("click", () => {
