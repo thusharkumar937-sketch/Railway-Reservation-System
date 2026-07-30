@@ -1,9 +1,4 @@
-/* =========================================================================
-   uc1-search.js — Use Case 1: Search Trains
-   Passenger enters source, destination and date. System validates the
-   input (business rule: source != destination; exception: unrecognized
-   station) and searches TRAINS for matches.
-========================================================================= */
+
 
 import { state } from "./state.js";
 import { TRAINS, STATIONS } from "./data.js";
@@ -14,6 +9,10 @@ export function tplSearch(){
   const c = state.searchCriteria || {};
   return `
   <div class="card">
+    <h2>Search Trains</h2>
+    <p class="subtext">Enter source, destination and date of journey.</p>
+    <div id="search-error"></div>
+    <div class="card">
     <h2>Search Trains</h2>
     <p class="subtext">Enter source, destination and date of journey.</p>
     <div id="search-error"></div>
