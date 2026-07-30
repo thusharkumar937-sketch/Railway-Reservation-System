@@ -1,9 +1,4 @@
-/* =========================================================================
-   uc8-cancelBooking.js — Use Case 8: Cancel Booking
-   Includes Use Case 7 (View Booking / PNR Status): cancellation is
-   triggered from either the PNR Status screen or the My Bookings list,
-   so this module is imported by both uc7-pnrStatus.js and uc9-history.js.
-========================================================================= */
+
 
 import { getBooking, saveBooking } from "./storage.js";
 import { showToast } from "./utils.js";
